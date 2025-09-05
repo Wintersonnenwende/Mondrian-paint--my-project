@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian painting</title>
+    
+    <style>
+        /* 
+        Write your CSS here 
+        Line Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E
+        Grey: #D3D3D3
+        */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F0F1EC;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid; 
+            background-color: #232629;
+            grid-template-columns: 355px 355px 210px 210px;
+            grid-template-rows: 350px 270px 120px 60px 30px 25px ;
+            gap: 10px;
+            border: 10px solid black;
+            
+        }
+
+        .item {
+            background-color: #F0F1EC;
+        }
+        
+        .red {
+            background-color: #E72F24;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .yellow {
+            background-color: #F9D01E;
+            grid-column: span 2;
+        }
+        
+        .black {
+            background-color: #232629;
+            grid-row: span 2;
+           
+        }
+        
+        .grey1 {
+            background-color: #D3D3D3;
+            
+        }
+        
+        .white3 {
+            background-color: #F0F1EC;
+            grid-column:  span 2;
+        }
+
+        .grey2 {
+            background-color: #D3D3D3;
+            grid-row: 2 span;
+        }
+
+        .black2{
+            background-color: #232629;
+        }
+
+        .blue {
+            background-color: #004592;
+            grid-column: span 2;
+            grid-row: span 3;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item red"></div>
+        <div class="item yellow"></div>
+
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+
+
+        <div class="item black"></div>
+        <div class="item grey1"></div>
+        <div class="item white3"></div>
+
+
+        <div class="item grey2"></div>
+        <div class="item blue"></div>
+
+        <div class="item black2"></div>
+
+        
+        
+
+    </div>
+  
+</body>
+</html>
+
+
+<!--
+    Mondrian Painting Recreation
+    --------------------------------------
+    This is a CSS Grid-based recreation inspired by the geometric style 
+    of Piet Mondrian, a Dutch painter known for his abstract art.
+
+    Original inspiration: Piet Mondrian (1872–1944)
+    Style: Neoplasticism / De Stijl
+    This code does not copy a specific painting, but mimics his visual style.
+
+    Created with HTML & CSS only.
+-->
